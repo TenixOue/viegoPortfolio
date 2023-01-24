@@ -1,0 +1,317 @@
+/* Import de la police Raleway depuis Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+
+/* Définition de l'animation fadein en changeant l'opacité */
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  /* Styles par défaut pour le body */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: linear-gradient(rgb(72, 185, 213), #075840);
+}
+
+.menu {
+  /* Styles pour le menu en haut de la page */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+
+ul {
+  /* Styles pour la liste d'items dans le menu */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(18, 30, 52);
+}
+
+li {
+  /* Styles pour chaque item de la liste */
+  float: left;
+}
+
+li a {
+  /* Styles pour les liens dans les items du menu */
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+
+li a:hover {
+  /* Styles pour les liens du menu lorsqu'on les survole avec la souris */
+  color: rgb(72, 185, 213);
+}
+
+#acceuil {
+  /* Styles pour l'accueil */
+  color: #6621db;
+  height: 500px;
+  width: 100%;
+  background-image: linear-gradient(rgb(72, 185, 213), black);
+}
+
+h2 {
+  /* Styles pour le titre h2*/
+  background: none;
+  padding: 0;
+  margin: 0;
+  color: blue;
+}
+
+#competences {
+  /* Styles pour la section de compétences */
+  color: red;
+  background-image: linear-gradient(black, rgb(72, 185, 213));
+}
+
+.img-viego {
+  /* Styles pour l'image en arrière-plan de viego a l'acceil*/
+  width: 35%;
+  position: absolute;
+  border-radius: 70%;
+  left: 70%;
+  top: 5%;
+  transform: translateX(-50%);
+  animation: fadein 9s;
+}
+
+h1 {
+  /* Styles pour le titre h1*/
+
+  background: none;
+  color: #c2a475;
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  font-size: 3em;
+  animation: fadein 5s;
+
+  text-shadow: 3px 2px #000;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.container .card {
+  position: relative;
+}
+
+.container .card .face {
+  width: 300px;
+  height: 200px;
+  transition: 0.4s;
+}
+
+.container .card .face.face1 {
+  /* Styles pour le positionnement des cartes */
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.container .card:hover .face.face1 {
+  /* Styles l'animation luminescente des cartes*/
+  transform: translateY(0);
+  box-shadow: inset 0 0 60px whitesmoke, inset 20px 0 80px #c2a475,
+    inset -20px 0 80px rgb(72, 185, 213), inset 20px 0 300px black,
+    inset -20px 0 300px #0ff, 10px 0 80px #0ff;
+}
+
+.container .card .face.face1 .content {
+  opacity: 0.2;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.container .card .face.face1 .content i {
+  font-size: 3em;
+  color: white;
+  display: inline-block;
+}
+
+.container .card .face.face2 {
+  position: relative;
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2 {
+  transform: translateY(0);
+}
+
+.container .card .face.face2 .content p,
+a {
+  font-size: 10pt;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.imgspell1,
+.imgspell2,
+.imgspell3,
+.imgspell4,
+.imgspell5 {
+  /* Styles pour les images de competences*/
+  width: 300px;
+  height: 200px;
+  transition: 0.4s;
+}
+
+h3 {
+  color: red;
+  text-align: center;
+  text-shadow: 3px 2px #000;
+  min-width: 700px;
+  margin: auto;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.bio {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  color: #fff;
+  text-align: left;
+  border-right: none;
+  padding: 10px 20px;
+  background: linear-gradient(rgb(72, 185, 213), #075840);
+}
+
+.video-popup {
+  display: none;
+  visibility: hidden;
+  position: fixed;
+  width: 320px;
+  height: 180px;
+  z-index: 1;
+}
+
+#video-link1:hover + .video-popup,
+#video-link2:hover + .video-popup,
+#video-link3:hover + .video-popup,
+#video-link4:hover + .video-popup,
+#video-link5:hover + .video-popup {
+  /* Styles pour les vidéos de compétences*/
+  display: block;
+  visibility: visible;
+  left: 0;
+  top: -20;
+}
+
+.video-popup:hover {
+  display: none;
+  visibility: hidden;
+}
+
+#contact {
+  background-color: #075840;
+  color: #f9f7f7;
+  font-family: "Roboto", sans-serif;
+}
+
+form {
+  /* Styles pour le formulaire de contacte*/
+  padding: 20px;
+  margin: auto;
+  max-width: 600px;
+  background: linear-gradient(#075840, #05323d);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+}
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: none;
+  background-color: #4d4d4d;
+  color: #f9f7f7;
+  font-size: 16px;
+  border-radius: 5px;
+}
+input[type="submit"] {
+  background-color: #e62020;
+  color: #f9f7f7;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.mention {
+  margin: 0 auto; /* Les marges seront automatiquement réparties à gauche et à droite */
+  text-align: center; /* Le contenu sera centré */
+  background-color: #121e34;
+}
+
+
+@media only screen and (max-width: 720px) {
+  .img-viego {
+    /* Ajustement de la taille de l'image de Viego */
+    width: 350px;
+  }
+
+  h1 {
+    /* Ajustement de la taille et de la position du titre */
+    font-size: 200%;
+    left: 200px;
+  }
+
+  .container {
+    /* Ajustement de l'espacement des carte */
+    justify-content: space-around;
+  }
+
+  .container .card .face {
+    /* Ajustement de la taille des face des carte */
+    width: 250px;
+    height: 150px;
+  }
+
+  .menu {
+    position: static;
+  }
+}
+form {
+  padding: 10px;
+  margin: auto;
+  width: 90%;
+}
+input,
+textarea {
+  width: 90%;
+}

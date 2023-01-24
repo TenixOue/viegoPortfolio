@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+    <title>CV</title>
+  </head>
+  <body>
+    
+    <header>
+      <nav class="menu">
+        <ul>
+          <li><a href="#acceuil">Acceuil</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#experiences">Expériences</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="acceuil">
+        <h1>Viego le roi déchu</h1>
+        <img
+          class="img-viego"
+          src="data/viego.png"
+          alt="Front image of viego"
+        />
+      </section>
+      <section id="competences">
+        <h2>Compétences</h2>
+        <div class="container">
+          <article class="card">
+            <div class="face face1">
+              <div class="content">
+                <i class="spell1"></i>
+                <img
+                  src="data/Viego_Passive.png"
+                  alt="spell 1 "
+                  class="imgspell1"
+                />
+                <!-- <h3>spell 1</h3> -->
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p>
+                  passif: Viego peut posséder de manière temporaire les
+                  champions qu'il aide à tuer et se soigne d'une portion de
+                  leurs PV max. Il gagne également un lancer gratuit de son
+                  ultime, Cœur brisé. Lorsqu'il possède un ennemi, Viego reçoit
+                  aussi un bonus de vitesse de déplacement lorsqu'il se dirige
+                  vers des champions ennemis.
+                </p>
+                <div id="video-link1">Voir la vidéo</div>
+                <video
+                  class="video-popup"
+                  autoplay
+                  muted
+                  src="data/video_passif.mp4"
+                  controls
+                ></video>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="face face1">
+              <div class="content">
+                <i class="spell2"></i>
+                <img
+                  src="data/ViegoQ.png"
+                  alt="sort 2 de viego"
+                  class="imgspell2"
+                />
+                <!-- <h3>Spell 2</h3> -->
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p>
+                  A - Les attaques de Viego infligent un pourcentage des PV
+                  actuels de sa cible en dégâts supplémentaires à l'impact.
+                  Lorsque Viego attaque un ennemi qu'il a récemment touché avec
+                  une compétence, cette attaque touche deux fois. Le deuxième
+                  coup absorbe des PV de la cible au lieu de lui infliger des
+                  dégâts ordinaires Cette compétence passive est conservée
+                  pendant la possession. Active : Viego frappe devant lui avec
+                  sa lame et blesse tous les ennemis touchés.
+                </p>
+                <div id="video-link2">Voir la vidéo</div>
+                <video
+                  class="video-popup"
+                  autoplay
+                  muted
+                  src="data/ability_Viego_Q1.mp4"
+                  controls
+                ></video>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="face face1">
+              <div class="content">
+                <i class="spell3"></i>
+                <img
+                  src="data/ViegoW.png"
+                  alt="sort 3 de viego "
+                  class="imgspell3"
+                />
+                <!-- <h3>spell 3</h3> -->
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p>
+                  Z - Gueule spectrale Viego charge son attaque puis s'élance en
+                  avant, projetant une explosion de brume qui étourdit et blesse
+                  le premier ennemi touché. La durée de l'étourdissement et la
+                  portée de la brume augmentent avec le temps de chargement,
+                  mais les dégâts et la portée de la ruée restent les mêmes.
+                </p>
+                <div id="video-link3">Voir la vidéo</div>
+                <video
+                  class="video-popup"
+                  autoplay
+                  muted
+                  src="data/ability_Viego_W1.mp4"
+                  controls
+                ></video>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="face face1">
+              <div class="content">
+                <i class="spell4"></i>
+                <img
+                  src="data/ViegoE.png"
+                  alt="sort 3 de viego"
+                  class="imgspell4"
+                />
+                <!-- <h3>spell 4</h3> -->
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p>
+                  E - Chemin tourmenté Viego émet une onde de brume noire autour
+                  d'un mur proche. Tant qu'il est dans la brume, Viego est
+                  camouflé et gagne un bonus de vitesse de déplacement et de
+                  vitesse d'attaque.
+                </p>
+                <div id="video-link4">Voir la vidéo</div>
+                <video
+                  class="video-popup"
+                  autoplay
+                  muted
+                  src="data/ability_Viego_E1.mp4"
+                  controls
+                ></video>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="face face1">
+              <div class="content">
+                <i class="spell5"></i>
+                <img
+                  src="data/ViegoR.png"
+                  alt="sort 4 de viego"
+                  class="imgspell5"
+                />
+                <!-- <h3>spell 5</h3> -->
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p>
+                  R - Cœur brisé Viego abandonne le corps qu'il possède et se
+                  téléporte vers l'avant pour attaquer le champion ennemi à
+                  portée avec le plus faible pourcentage de PV. Il inflige des
+                  dégâts supplémentaires en fonction des PV manquants à ce
+                  champion. Les autres ennemis à portée sont repoussés
+                </p>
+                <div id="video-link5">Voir la vidéo</div>
+                <video
+                  class="video-popup"
+                  autoplay
+                  muted
+                  src="data/ability_Viego_R1.mp4"
+                  controls
+                ></video>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="experiences">
+        <div class="bio">
+          <h3>Je suis Viego, Le roi déchu</h3>
+          Formulaire de contact
+          <p>
+            Pour contacter Viego, merci d'utiliser le formulaire ci-dessous.
+            Veuillez noter que Viego ne possède ni numéro de téléphone ni
+            adresse email.
+          </p>
+
+          <h2>Candidature pour un stage de jungle Assassin</h2>
+          <p>
+            Je suis mort il y a plus de 1000 ans et vit désormais dans les îles
+            obscures.
+          </p>
+
+          <p>
+            Je suis actuellement à la recherche d'un stage dans la Faille de
+            l'Invocateur en tant que jungle de type Assassin du 06/12/2022 au
+            06/03/2023. Je possède tous les permis nécessaires et inimaginables.
+          </p>
+
+          <p>
+            Pour mes expériences professionnelles, j'étais le roi d'un royaume
+            et donc de l'armée, mais aussi de la classe politique. Je possède
+            donc un bon leadership et des compétences de communication.
+          </p>
+
+          <p>
+            Étant donné que j'ai pour volonté de dominer le monde avec mes
+            ombres, je possède une grande force de frappe et des compétences
+            très intéressantes. Je suis également capable de prendre mes
+            adversaires par surprise avec facilité.
+          </p>
+
+          <p>
+            En tant que souverain des morts, j'ai développé une grande habileté
+            à survivre dans des environnements hostiles et à prendre des
+            décisions rapides et intelligentes. Je suis également très agile et
+            rusé, ce qui me permet de m'adapter facilement aux situations
+            changeantes sur le terrain.
+          </p>
+
+          <p>
+            Je suis passionné par la stratégie et j'adore travailler en équipe
+            pour atteindre un objectif commun. J'ai hâte de mettre mes
+            compétences au service de la Faille de l'Invocateur et de contribuer
+            à la réussite de l'équipe.
+          </p>
+
+          <p>
+            Je pense donc que, avec tout cela, j'ai ma place au sein de la
+            Faille de l'Invocateur et que je pourrais sans souci prendre ma
+            place en tant que jungle de haut niveau.
+          </p>
+
+          <h2>Mes passions en dehors de la Faille de l'Invocateur</h2>
+          <p>
+            En dehors de la Faille de l'Invocateur, j'aime passer du temps à
+            explorer les Royaumes des Morts, à rassembler des artefacts anciens
+            et à apprendre de nouvelles techniques de combat. J'aime aussi
+            écouter de la musique sombre et mélancolique pour me détendre.
+          </p>
+        </div>
+      </section>
+      <section id="contact">
+        <form>
+          <h4>Formulaire de contact</h4>
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="name" required /><br />
+          <label for="prenom">Prénom :</label>
+          <input type="text" id="prenom" name="prenom" required /><br />
+          <label for="email">Adresse e-mail :</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            required
+          /><br />
+          <label for="phone">Téléphone :</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{10}"
+            placeholder="06XXXXXXXX"
+            required
+          /><br />
+          <label for="message">Commentaire :</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="40"
+            required
+          ></textarea
+          ><br />
+          <input type="submit" value="Envoyer" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p class="mention">Tout droit réservé ©</p>
+      <ul class="social-icons">
+        <li>
+          <a href="https://www.twitter.com" target="_blank">
+            <img src="data/twitter.png" alt="Twitter" width="50" />
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com" target="_blank">
+            <img src="data/linkedin.png" alt="LinkedIn" width="50" />
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="data/instagram.png" alt="Instagram" width="50" />
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.youtube.com" target="_blank">
+            <img src="data/youtube.png" alt="YouTube" width="60" />
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
